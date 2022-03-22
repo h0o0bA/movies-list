@@ -1,0 +1,72 @@
+.filters-root {
+  flex: 0 0 12rem;
+
+  .group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: 700;
+
+      color: var(--text-primary-dark);
+    }
+
+    span {
+      font-size: var(--text-xs);
+
+      color: var(--gradient-two);
+      text-transform: capitalize;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      cursor: pointer;
+    }
+  }
+
+  .input-wrapper {
+    margin: 1rem 0;
+    display: flex;
+  }
+
+  .radio-group {
+    margin-top: 0.5rem;
+
+    p {
+      position: relative;
+
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--text-primary-dark);
+
+      &::after {
+        content: "";
+
+        width: 90%;
+        height: 1px;
+
+        position: absolute;
+        top: 50%;
+        left: 8%;
+
+        background-color: var(--text-secondary);
+      }
+    }
+
+    & > div {
+      margin-top: 0.25rem;
+
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .wrapper {
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media (min-width: 900px) {
+    flex-basis: 16.5rem;
+  }
+}

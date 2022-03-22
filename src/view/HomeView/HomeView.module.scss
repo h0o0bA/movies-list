@@ -1,0 +1,28 @@
+.home-view-root {
+  .title {
+    margin: 1rem 0 2rem;
+  }
+
+  .search-section {
+    max-width: 30rem;
+
+    margin: 0 auto;
+    padding: 2rem 0 3rem;
+
+    .input-wrapper {
+      display: flex;
+    }
+  }
+
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .content-section {
+      flex-direction: row;
+    }
+  }
+}

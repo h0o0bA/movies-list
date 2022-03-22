@@ -1,0 +1,17 @@
+.loader-root {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 72px;
+    height: 72px;
+
+    circle {
+      stroke: var(--gradient-one);
+    }
+  }
+}

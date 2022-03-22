@@ -1,0 +1,111 @@
+body {
+  font-family: 'Lato';
+  font-size: 22px;
+  margin: 0;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.blue-text {
+  color: #1254FF;
+}
+
+.testimonial-block {
+  background-color: #f9f8f6;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonial-block .content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 45px;
+}
+
+.testimonial-block .content-block p {
+  color: #6b6674;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.testimonial-block .content-block .left-block {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-right: 5%;
+  position: relative;
+}
+
+.testimonial-block .content-block .left-block::before {
+  content: '';
+  position: absolute;
+  background-color: #ff6c01;
+  width: 2px;
+  height: 88%;
+  top: 10px;
+  left: -25px;
+}
+
+.testimonial-block .content-block .left-block .dots {
+  position: absolute;
+  left: 0;
+  left: -45px;
+  top: -33px;
+}
+
+.testimonial-block .content-block span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.testimonial-block .content-block span::before {
+  content: '';
+  position: absolute;
+  background-color: #ff6c01;
+  width: 12px;
+  height: 12px;
+  bottom: 3%;
+  left: -30px;
+  border-radius: 50%;
+}
+
+.testimonial-block .content-block a {
+  background-color: #00a2e0;
+  padding: 15px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+  .testimonial-block .left-block {
+    margin-bottom: 5%;
+  }
+  .testimonial-block .content-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding: 45px 0px 30px 45px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

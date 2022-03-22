@@ -1,0 +1,101 @@
+body{
+    font-family: 'Lato';font-size: 22px;
+    margin: 0;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.blue-text{
+    color: #1254FF;
+}
+
+$paragraph_color:#6b6674;
+$btn_bgcolor:#00a2e0;
+
+  .testimonial-block{
+        background-color: #f9f8f6;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        .content-block{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 45px;
+            p{
+                color: $paragraph_color;
+                font-size: 20px;
+                line-height: 1.5;
+            }
+            .left-block{
+                flex-basis: 50%;
+                margin-right: 5%;
+                position: relative;
+                &::before {
+                    content:'';
+                    position: absolute;
+                    background-color: #ff6c01;
+                    width: 2px;
+                    height: 88%;
+                    top: 10px;
+                    left: -25px;
+                  }
+                  .dots {
+                    position: absolute;
+                    left: 0;
+                    left: -45px;
+                    top: -33px;
+                }
+            }
+            span {
+                font-size: 18px;
+                font-weight: 600;
+                color: #333;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-color: #ff6c01;
+                    width: 12px;
+                    height: 12px;
+                    bottom: 3%;
+                    left: -30px;
+                    border-radius: 50%;
+                  }
+            }
+            a{
+                background-color: $btn_bgcolor;
+                padding: 15px;
+                color: #fff;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            
+        }
+  }
+
+
+
+
+@media only screen and (min-width: 850px) and (max-width:1365px){
+  
+}
+
+
+
+@media only screen and (max-width: 850px){
+
+    .testimonial-block {
+        .left-block{
+            margin-bottom: 5%;
+        }
+
+        .content-block{
+            flex-direction: column;
+            align-items: baseline;
+            padding: 45px 0px 30px 45px;
+        }
+    }
+}
