@@ -1,5 +1,9 @@
 # Movies List App
 
+### Live View
+
+https://movies-list-ihab.netlify.app
+
 To run:
 
 ```
